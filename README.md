@@ -1,21 +1,17 @@
 # SPFx QnA Bot
 -----
+![Applies to](https://img.shields.io/badge/applies%20to-SharePoint%20Onlne-green)
+![spfx version](https://img.shields.io/badge/spfx%20version-1.8-green)
+
 ## Summary
 
 This is a SharePoint Framework Extension based QnA or chat bot that consumes the QnAMakper API to chat with the user. It is the extension so it is added to every page and makes the bot reachability easy
 
 With some just configuration it is ready to use.
 
+![SPFx QnA Bot demo](./Images/SPFxBot.png)
+
 ![SPFx QnA Bot demo](./Images/SPFx-QnA-Bot.gif)
-
-
-## Used SharePoint Framework Version
-
-![spfx version](https://img.shields.io/badge/spfx%20version-1.8-green)
-
-## Applies to
-
-- SharePoint Online
 
 
 ## Prerequisites
