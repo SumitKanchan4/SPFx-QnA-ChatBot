@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+    <CustomAction
+        Title="ChatBot"
+        Location="ClientSideExtension.ApplicationCustomizer"
+        ClientSideComponentId="2d4bef24-aae2-47f5-a654-e2b9d58c87b7"
+        ClientSideComponentProperties="{&quot;EndPoint&quot;:&quot;<YOUR ENDPOINT>&quot;,&quot;HostUrl&quot;:&quot;<YOUR HOST URL>&quot;,&quot;KbKey&quot;:&quot;<YOUR KB ID>&quot;,&quot;Filters&quot;:&quot;<Mention Filters>&quot;},&quot;FiltersOperator&quot;:&quot;<AND, OR>&quot;}">
+    </CustomAction>
+</Elements>

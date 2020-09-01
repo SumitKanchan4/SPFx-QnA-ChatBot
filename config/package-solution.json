@@ -1,0 +1,35 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "spfxqnabot-solution",
+    "title": "SPFx QnA Chat Bot Extension",
+    "id": "72267a21-48e0-4826-b809-4c0912c4c5bd",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "isDomainIsolated": false,
+    "developer": {
+      "name": "Sumit Kanchan",
+      "websiteUrl": "https://www.sharepointwidgets.com/",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": ""
+    },
+    "features": [
+      {
+        "title": "SPFx QnA Chat Bot Extension.",
+        "description": "Deploys a SPFx QnA Chat Bot Extension",
+        "id": "269d3be4-948e-4d55-bcb7-710f6f92b237",
+        "version": "1.0.0.0",
+        "assets": {
+          "elementManifests": [
+            "elements.xml",
+            "ClientSideInstance.xml"
+          ]
+        }
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/spfxqnabot.sppkg"
+  }
+}
