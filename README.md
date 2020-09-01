@@ -45,7 +45,7 @@ This extension illustrates the following concepts:
 - Navigate to settings and scroll to the bottom of the page
 - Follow the below screen shot to identify the configuration parameters
 
-![SPFx QnA Bot Configuration](./Images/SPFxQnABot.png)
+![SPFx QnA Bot Configuration](./Images/SPFxQnaBot.png)
 
 
 ## Solution
