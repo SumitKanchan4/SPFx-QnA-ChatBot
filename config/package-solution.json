@@ -7,9 +7,10 @@
     "version": "1.0.0.0",
     "includeClientSideAssets": true,
     "isDomainIsolated": false,
+    "skipFeatureDeployment": true,
     "developer": {
       "name": "Sumit Kanchan",
-      "websiteUrl": "https://www.sharepointwidgets.com/",
+      "websiteUrl": "https://www.SharePointWidgets.com",
       "privacyUrl": "",
       "termsOfUseUrl": "",
       "mpnId": ""
