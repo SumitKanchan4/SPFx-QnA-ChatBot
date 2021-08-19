@@ -175,10 +175,18 @@ export default class ChatWindow extends React.Component<IChatWindowProps, IChatW
             let httpClientOptions: IHttpClientOptions = this.createHttpClientOptions(questionAsked);
 
             try {
-                let queryResponse: HttpClientResponse = await this.props.httpClient.post(qnaUrl, HttpClient.configurations.v1, httpClientOptions);
+                let queryResponse: HttpClientResponse = null
+                try {
+                    queryResponse = await this.props.httpClient.post(qnaUrl, HttpClient.configurations.v1, httpClientOptions);
+                } catch (error) {
+                    Log.error(this.props.logSource, error);
+                    Log.error(this.props.logSource, new Error("Error occured while querying the query to qnaMaker, re-confirm the configuration of the bot"));
+                    this.addConversation([{ content: "Error: Invalid bot configuration", score: 0, source: ISource.BOT, qnaID: -1 }]);
+                }
+                
                 let json: any = await queryResponse.json();
 
-                if (json) {
+                if (json && json?.answers) {
                     let answerObject: any = json.answers[0];
                     let answer: IConversation[] = [{
                         content: answerObject.answer,
@@ -190,6 +198,14 @@ export default class ChatWindow extends React.Component<IChatWindowProps, IChatW
                     this.addConversation(answer);
                     this.checkForPrompts(answerObject);
                     Log.verbose(this.props.logSource, JSON.stringify(answer));
+                }
+                else if (json && json?.error) {
+                    Log.error(this.props.logSource, json.error);
+                    this.addConversation([{ content: `Received error message: "${json.error.message}"`, score: 0, source: ISource.BOT, qnaID: -1 }]);
+                }
+                else {
+                    Log.error(this.props.logSource, new Error(JSON.stringify(json)));
+                    this.addConversation([{ content: "Some error occured while retreiving the answer :(", score: 0, source: ISource.BOT, qnaID: -1 }]);
                 }
             }
             catch (error) {
