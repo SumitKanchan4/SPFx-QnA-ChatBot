@@ -9,11 +9,11 @@
         "2d4bef24-aae2-47f5-a654-e2b9d58c87b7": {
           "location": "ClientSideExtension.ApplicationCustomizer",
           "properties": {
-            "EndPoint": "ad607a55-1d5a-4b6b-96cf-3adf9a8e4eb7",
-            "HostUrl": "https://rndqna.azurewebsites.net/qnamaker",
+            "EndPoint": "<ENDPOINT>",
+            "HostUrl": "<HOST URL>",
             "Filters": "",
             "FiltersOperator":"",
-            "KbKey":"182d935d-9ae3-4ae0-950c-1abe5a372083"
+            "KbKey":"<KNOWLEDGE BASE KEY>"
           }
         }
       }
@@ -24,11 +24,11 @@
         "2d4bef24-aae2-47f5-a654-e2b9d58c87b7": {
           "location": "ClientSideExtension.ApplicationCustomizer",
           "properties":  {
-            "EndPoint": "ad607a55-1d5a-4b6b-96cf-3adf9a8e4eb7",
-            "HostUrl": "https://rndqna.azurewebsites.net/qnamaker",
+            "EndPoint": "<ENDPOINT>",
+            "HostUrl": "<HOST URL>",
             "Filters": "",
             "FiltersOperator":"",
-            "KbKey":"182d935d-9ae3-4ae0-950c-1abe5a372083"
+            "KbKey":"<KNOWLEDGE BASE KEY>"
           }
         }
       }
