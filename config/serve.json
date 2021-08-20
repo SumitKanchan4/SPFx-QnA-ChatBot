@@ -4,22 +4,22 @@
   "https": true,
   "serveConfigurations": {
     "default": {
-      "pageUrl": "https://.../SitePages/SharePoint.aspx",
+      "pageUrl": "https://.../SitePages/Sample.aspx",
       "customActions": {
         "2d4bef24-aae2-47f5-a654-e2b9d58c87b7": {
           "location": "ClientSideExtension.ApplicationCustomizer",
           "properties": {
             "EndPoint": "<ENDPOINT>",
-            "HostUrl": "<HOST URL>",
+            "HostUrl": "https://qnamaker04.azurewebsites.net/qnamaker",
             "Filters": "",
             "FiltersOperator":"",
-            "KbKey":"<KNOWLEDGE BASE KEY>"
+            "KbKey":"834a4b53-b75a-4c34-92c8-79f7a6bb0f40"
           }
         }
       }
     },
     "chatBot": {
-      "pageUrl": "https://.../SitePages/SharePoint.aspx",
+      "pageUrl": "https://.../SitePages/Sample.aspx",
       "customActions": {
         "2d4bef24-aae2-47f5-a654-e2b9d58c87b7": {
           "location": "ClientSideExtension.ApplicationCustomizer",
@@ -28,7 +28,7 @@
             "HostUrl": "<HOST URL>",
             "Filters": "",
             "FiltersOperator":"",
-            "KbKey":"<KNOWLEDGE BASE KEY>"
+            "KbKey":"<KB KEY>"
           }
         }
       }
