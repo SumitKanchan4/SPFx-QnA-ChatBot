@@ -13,6 +13,7 @@ export default class ChatWindow extends React.Component<IChatWindowProps, IChatW
     constructor(props: IChatWindowProps, state: IChatWindowState) {
         super(props);
 
+
         this.state = {
             collapsed: true,
             conversation: [{ source: ISource.BOT, content: `Hello ${this.props.user.displayName.split(" ")[0]}`, score: 100, qnaID: -1 }],
@@ -175,6 +176,7 @@ export default class ChatWindow extends React.Component<IChatWindowProps, IChatW
             let httpClientOptions: IHttpClientOptions = this.createHttpClientOptions(questionAsked);
 
             try {
+
                 let queryResponse: HttpClientResponse = null
                 try {
                     queryResponse = await this.props.httpClient.post(qnaUrl, HttpClient.configurations.v1, httpClientOptions);
@@ -183,7 +185,7 @@ export default class ChatWindow extends React.Component<IChatWindowProps, IChatW
                     Log.error(this.props.logSource, new Error("Error occured while querying the query to qnaMaker, re-confirm the configuration of the bot"));
                     this.addConversation([{ content: "Error: Invalid bot configuration", score: 0, source: ISource.BOT, qnaID: -1 }]);
                 }
-                
+
                 let json: any = await queryResponse.json();
 
                 if (json && json?.answers) {
@@ -201,7 +203,7 @@ export default class ChatWindow extends React.Component<IChatWindowProps, IChatW
                 }
                 else if (json && json?.error) {
                     Log.error(this.props.logSource, json.error);
-                    this.addConversation([{ content: `Received error message: "${json.error.message}"`, score: 0, source: ISource.BOT, qnaID: -1 }]);
+                    this.addConversation([{ content: `Recieved error message: "${json.error.message}"`, score: 0, source: ISource.BOT, qnaID: -1 }]);
                 }
                 else {
                     Log.error(this.props.logSource, new Error(JSON.stringify(json)));
