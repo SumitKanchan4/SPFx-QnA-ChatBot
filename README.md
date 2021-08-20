@@ -1,7 +1,7 @@
 # SPFx QnA Bot
 -----
 ![Applies to](https://img.shields.io/badge/applies%20to-SharePoint%20Onlne-green)
-![spfx version](https://img.shields.io/badge/spfx%20version-1.12.1-green)
+![spfx version](https://img.shields.io/badge/spfx%20version-1.8-green)
 [![YouTube Video Views](https://img.shields.io/youtube/views/-PnH0Gpu6H8?style=social)](https://www.youtube.com/watch?v=-PnH0Gpu6H8)
 
 ## Summary
