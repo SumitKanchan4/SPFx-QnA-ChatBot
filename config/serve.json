@@ -10,10 +10,10 @@
           "location": "ClientSideExtension.ApplicationCustomizer",
           "properties": {
             "EndPoint": "<ENDPOINT>",
-            "HostUrl": "https://qnamaker04.azurewebsites.net/qnamaker",
+            "HostUrl": "<HOST URL>",
             "Filters": "",
             "FiltersOperator":"",
-            "KbKey":"834a4b53-b75a-4c34-92c8-79f7a6bb0f40"
+            "KbKey":"<KB KEY>"
           }
         }
       }
