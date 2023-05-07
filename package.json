@@ -16,7 +16,7 @@
     "@microsoft/sp-office-ui-fabric-core": "1.12.1",
     "markdown-to-jsx": "^6.11.4",
     "node-gyp": "^7.1.0",
-    "npm": "^6.14.8",
+    "npm": "^9.6.6",
     "react": "16.9.0",
     "react-dom": "16.9.0",
     "react-scroll": "^1.8.3",
